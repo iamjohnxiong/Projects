@@ -21,6 +21,8 @@ class Level {
     // The 2D array that contains the layout of the level.
     private var tiles = Array2D<Tile>(columns: NumColumns, rows: NumRows)
     
+    private var possibleSwaps = Set<Swap>();
+    
     
     // MARK: Initialization
     
@@ -54,7 +56,17 @@ class Level {
     
     // Fills up the level with new Cookie objects
     func shuffle() -> Set<Cookie> {
-        return createInitialCookies()
+        
+        var set: Set<Cookie>
+        repeat {
+            set = createInitialCookies();
+            detectPossibleSwaps();
+            print("possible swaps \(possibleSwaps)");
+        } while {
+            possibleSwaps.count == 0;
+        }
+        
+        return set;
     }
     
     private func createInitialCookies() -> Set<Cookie> {
@@ -63,7 +75,13 @@ class Level {
         for row in 0..<NumRows {
             for column in 0..<NumColumns {
                 if tiles[column, row] != nil {
-                    var cookieType = CookieType.random() // Keep 'var'. Will be mutated later
+                    var cookieType: CookieType
+                    repeat {
+                        cookieType = CookieType.random()
+                    } while (column >= 2 &&
+                        cookies[column - 1, row]?.cookieType == cookieType && cookies[column - 2, row]?.cookieType == cookieType)
+                        || (row >= 2 &&
+                            cookies[column, row - 1]?.cookieType == cookieType && cookies[column, row - 2]?.cookieType == cookieType)
                     
                     let cookie = Cookie(column: column, row: row, cookieType: cookieType)
                     cookies[column, row] = cookie
@@ -105,5 +123,13 @@ class Level {
         cookies[columnB, rowB] = swap.cookieA
         swap.cookieA.column = columnB
         swap.cookieA.row = rowB
+    }
+    
+    private func hasChainAtColumn(column: Int, row: Int) -> Bool {
+        let cookieType = cookies[column, row]!.cookieType;
+        
+        var horzLength = 1;
+        var i = column - 1;
+        
     }
 }
