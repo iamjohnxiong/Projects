@@ -25,13 +25,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad();
         
         accounts = accountFactory.GetAccounts();
+        
+        
     }
-
-    internal func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (accounts?.count)!;
     }
     
-    internal func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "AccountInfoCell") as! AccountInfoTableViewCell;
         
         let account = accounts![indexPath.row];
@@ -43,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    internal func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("You selected cell #\(indexPath.row)!")
     }
 
