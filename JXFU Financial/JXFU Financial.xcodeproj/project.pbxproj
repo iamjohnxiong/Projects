@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525E68851D43A8DB00112A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E68841D43A8DB00112A49 /* AppDelegate.swift */; };
+		525E688A1D43A8DB00112A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525E68881D43A8DB00112A49 /* Main.storyboard */; };
+		525E688C1D43A8DB00112A49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525E688B1D43A8DB00112A49 /* Assets.xcassets */; };
+		525E688F1D43A8DB00112A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525E688D1D43A8DB00112A49 /* LaunchScreen.storyboard */; };
+		525E68971D4501ED00112A49 /* JXFU_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 525E68961D4501ED00112A49 /* JXFU_Logo.png */; };
+		525E68991D45033B00112A49 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E68981D45033B00112A49 /* AccountCell.swift */; };
+		525E689B1D45040500112A49 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E689A1D45040500112A49 /* AccountViewController.swift */; };
+		525E689D1D45051400112A49 /* AccountFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E689C1D45051400112A49 /* AccountFactory.swift */; };
+		525E68A01D45054B00112A49 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E689F1D45054B00112A49 /* Account.swift */; };
+		525E68A21D4517AD00112A49 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E68A11D4517AD00112A49 /* Transaction.swift */; };
+		525E68A61D451C5800112A49 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E68A51D451C5800112A49 /* DetailCell.swift */; };
+		525E68A81D451DC800112A49 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E68A71D451DC800112A49 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		525E68811D43A8DB00112A49 /* JXFU Financial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JXFU Financial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525E68841D43A8DB00112A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		525E68891D43A8DB00112A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		525E688B1D43A8DB00112A49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		525E688E1D43A8DB00112A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		525E68901D43A8DB00112A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525E68961D4501ED00112A49 /* JXFU_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JXFU_Logo.png; sourceTree = "<group>"; };
+		525E68981D45033B00112A49 /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		525E689A1D45040500112A49 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		525E689C1D45051400112A49 /* AccountFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountFactory.swift; sourceTree = "<group>"; };
+		525E689F1D45054B00112A49 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		525E68A11D4517AD00112A49 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		525E68A51D451C5800112A49 /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		525E68A71D451DC800112A49 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		525E687E1D43A8DB00112A49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		525E68781D43A8DB00112A49 = {
+			isa = PBXGroup;
+			children = (
+				525E68831D43A8DB00112A49 /* JXFU Financial */,
+				525E68821D43A8DB00112A49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		525E68821D43A8DB00112A49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				525E68811D43A8DB00112A49 /* JXFU Financial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		525E68831D43A8DB00112A49 /* JXFU Financial */ = {
+			isa = PBXGroup;
+			children = (
+				525E68961D4501ED00112A49 /* JXFU_Logo.png */,
+				525E68841D43A8DB00112A49 /* AppDelegate.swift */,
+				525E68881D43A8DB00112A49 /* Main.storyboard */,
+				525E688B1D43A8DB00112A49 /* Assets.xcassets */,
+				525E688D1D43A8DB00112A49 /* LaunchScreen.storyboard */,
+				525E68901D43A8DB00112A49 /* Info.plist */,
+				525E68981D45033B00112A49 /* AccountCell.swift */,
+				525E689A1D45040500112A49 /* AccountViewController.swift */,
+				525E689C1D45051400112A49 /* AccountFactory.swift */,
+				525E689F1D45054B00112A49 /* Account.swift */,
+				525E68A11D4517AD00112A49 /* Transaction.swift */,
+				525E68A51D451C5800112A49 /* DetailCell.swift */,
+				525E68A71D451DC800112A49 /* DetailViewController.swift */,
+			);
+			path = "JXFU Financial";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		525E68801D43A8DB00112A49 /* JXFU Financial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525E68931D43A8DB00112A49 /* Build configuration list for PBXNativeTarget "JXFU Financial" */;
+			buildPhases = (
+				525E687D1D43A8DB00112A49 /* Sources */,
+				525E687E1D43A8DB00112A49 /* Frameworks */,
+				525E687F1D43A8DB00112A49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JXFU Financial";
+			productName = "JXFU Financial";
+			productReference = 525E68811D43A8DB00112A49 /* JXFU Financial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		525E68791D43A8DB00112A49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "John Xiong";
+				TargetAttributes = {
+					525E68801D43A8DB00112A49 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N4X9H9L3T7;
+					};
+				};
+			};
+			buildConfigurationList = 525E687C1D43A8DB00112A49 /* Build configuration list for PBXProject "JXFU Financial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 525E68781D43A8DB00112A49;
+			productRefGroup = 525E68821D43A8DB00112A49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				525E68801D43A8DB00112A49 /* JXFU Financial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		525E687F1D43A8DB00112A49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525E688F1D43A8DB00112A49 /* LaunchScreen.storyboard in Resources */,
+				525E68971D4501ED00112A49 /* JXFU_Logo.png in Resources */,
+				525E688C1D43A8DB00112A49 /* Assets.xcassets in Resources */,
+				525E688A1D43A8DB00112A49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		525E687D1D43A8DB00112A49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525E68A01D45054B00112A49 /* Account.swift in Sources */,
+				525E689D1D45051400112A49 /* AccountFactory.swift in Sources */,
+				525E68A21D4517AD00112A49 /* Transaction.swift in Sources */,
+				525E68851D43A8DB00112A49 /* AppDelegate.swift in Sources */,
+				525E68991D45033B00112A49 /* AccountCell.swift in Sources */,
+				525E68A61D451C5800112A49 /* DetailCell.swift in Sources */,
+				525E689B1D45040500112A49 /* AccountViewController.swift in Sources */,
+				525E68A81D451DC800112A49 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		525E68881D43A8DB00112A49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525E68891D43A8DB00112A49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		525E688D1D43A8DB00112A49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525E688E1D43A8DB00112A49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		525E68911D43A8DB00112A49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		525E68921D43A8DB00112A49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		525E68941D43A8DB00112A49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JXFU Financial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johnxiong.JXFU-Financial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		525E68951D43A8DB00112A49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JXFU Financial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johnxiong.JXFU-Financial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		525E687C1D43A8DB00112A49 /* Build configuration list for PBXProject "JXFU Financial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525E68911D43A8DB00112A49 /* Debug */,
+				525E68921D43A8DB00112A49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525E68931D43A8DB00112A49 /* Build configuration list for PBXNativeTarget "JXFU Financial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525E68941D43A8DB00112A49 /* Debug */,
+				525E68951D43A8DB00112A49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 525E68791D43A8DB00112A49 /* Project object */;
+}
