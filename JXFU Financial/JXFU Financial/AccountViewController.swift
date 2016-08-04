@@ -44,7 +44,7 @@ class AccountViewController: UIViewController, UITableViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "AccountsToDetail" {
             if let detailViewController = segue.destinationViewController as? DetailViewController {
-                detailViewController.account = selectedAccount!;
+                detailViewController.selectedAccount = selectedAccount!;
             }
         }
     }

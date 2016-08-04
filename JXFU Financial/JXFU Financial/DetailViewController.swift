@@ -16,18 +16,16 @@ class DetailViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var detailTable: UITableView!
     
     var transactions: [Transaction]?;
-    var account: Account?;
+    var selectedAccount: Account?;
     
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        transactions = AccountFactory().getTransactions(account!);
+        transactions = AccountFactory().getTransactions(selectedAccount!);
         
-        /*
-        accountName.text = account?.accountName;
-        accountId.text = String(account?.accountId);
-        accountAmount.text = String(account?.accountAmount);
-        */
+        accountName.text = String(selectedAccount!.accountName);
+        accountId.text = String(selectedAccount!.accountId);
+        accountAmount.text = String(selectedAccount!.accountAmount);
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
