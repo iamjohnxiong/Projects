@@ -16,6 +16,9 @@ class PersonTableViewCell: UITableViewCell {
     
     @IBOutlet weak var personLocationLabel: UILabel!
     
+    @IBOutlet weak var personLocationMetLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

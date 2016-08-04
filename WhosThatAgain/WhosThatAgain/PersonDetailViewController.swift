@@ -12,10 +12,14 @@ class PersonDetailViewController: UIViewController {
     
     var person: Person?;
     
+    @IBOutlet weak var personImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad();
         
         title = person!.fullName;
+        
+        personImage.image = person!.image;
     }
     
     

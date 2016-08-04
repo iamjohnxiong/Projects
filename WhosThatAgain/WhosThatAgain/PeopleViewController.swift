@@ -12,8 +12,15 @@ class PeopleViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var personTableView: UITableView!
     
-    var persons: [Person] = [Person(firstName: "John", lastName: "Xiong",location: "Lansing, MI"), Person(firstName: "Nalee", lastName: "Vang")];
     var selectedPerson: Person?;
+    
+    @IBAction func addButtonClicked(sender: AnyObject) {
+        
+        performSegueWithIdentifier("AddPersonSegue", sender: self);
+        
+        personTableView.reloadData();
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +36,13 @@ class PeopleViewController: UIViewController, UITableViewDelegate {
     
     // MARK: UITableViewDelegate Methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return persons.count;
+        return PersonFactory().persons.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let personCell = personTableView.dequeueReusableCellWithIdentifier("PersonTableViewCell", forIndexPath: indexPath) as! PersonTableViewCell;
         
-        let person = persons[indexPath.row];
+        let person = PersonFactory().persons[indexPath.row];
         personCell.personNameLabel.text = person.fullName;
         
         if person.location != nil {
@@ -48,14 +55,18 @@ class PeopleViewController: UIViewController, UITableViewDelegate {
             //let fileURL = NSBundle.mainBundle().URLForResource("defaultPersonImage", withExtension: "png")
             //let defaultImage = CIImage(contentsOfURL: fileURL!)
             //personCell.personImage.image = UIImage(CGImage: defaultImage);
+            personCell.personImage.image = UIImage(named: "defaultPersonImage.png");
         }
         
+        if person.locationMet != nil {
+            personCell.personLocationMetLabel.text = "Met at " + person.locationMet!;
+        }
         
         return personCell;
     }
     
     func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
-        selectedPerson = persons[indexPath.row];
+        selectedPerson = PersonFactory().persons[indexPath.row];
     }
     
 
@@ -71,6 +82,18 @@ class PeopleViewController: UIViewController, UITableViewDelegate {
                 personDetailViewController.person = selectedPerson!;
             }
         }
+    }
+    
+    @IBAction func exit(segue: UIStoryboardSegue) {
+        
+        if segue.identifier == "AddedPersonSegue" {
+            let peopleViewController = segue.sourceViewController as? AddPersonViewController;
+            
+            PersonFactory().persons.append(Person(firstName: (peopleViewController?.firstNameTextField.text)!, lastName: (peopleViewController?.lastNameTextField.text)!));
+            
+                personTableView.reloadData();
+        }
+        
     }
 
 }

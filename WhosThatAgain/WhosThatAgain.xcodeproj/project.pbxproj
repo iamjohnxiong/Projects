@@ -17,6 +17,8 @@
 		52D47CCD1D52A3A10026B190 /* defaultPersonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D47CCC1D52A3A10026B190 /* defaultPersonImage.png */; };
 		52D47CD01D52A3D60026B190 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D47CCF1D52A3D60026B190 /* Person.swift */; };
 		52D47CD21D52A7CD0026B190 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D47CD11D52A7CD0026B190 /* PersonDetailViewController.swift */; };
+		52D6CF331D53AA650056C030 /* PersonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6CF321D53AA650056C030 /* PersonFactory.swift */; };
+		52D6CF351D53AB070056C030 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6CF341D53AB070056C030 /* AddPersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		52D47CCC1D52A3A10026B190 /* defaultPersonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPersonImage.png; sourceTree = "<group>"; };
 		52D47CCF1D52A3D60026B190 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		52D47CD11D52A7CD0026B190 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		52D6CF321D53AA650056C030 /* PersonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonFactory.swift; sourceTree = "<group>"; };
+		52D6CF341D53AB070056C030 /* AddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		52D47CB21D529E420026B190 /* WhosThatAgain */ = {
 			isa = PBXGroup;
 			children = (
+				52D6CF361D53AB0D0056C030 /* ViewControllers */,
 				52D47CCE1D52A3A40026B190 /* Images */,
 				52D47CB31D529E420026B190 /* AppDelegate.swift */,
 				52D47CB71D529E420026B190 /* Main.storyboard */,
@@ -72,9 +77,8 @@
 				52D47CC21D529E420026B190 /* Info.plist */,
 				52D47CBA1D529E420026B190 /* WhosThatAgain.xcdatamodeld */,
 				52D47CC81D52A0C00026B190 /* PersonTableViewCell.swift */,
-				52D47CCA1D52A1CE0026B190 /* PeopleViewController.swift */,
 				52D47CCF1D52A3D60026B190 /* Person.swift */,
-				52D47CD11D52A7CD0026B190 /* PersonDetailViewController.swift */,
+				52D6CF321D53AA650056C030 /* PersonFactory.swift */,
 			);
 			path = WhosThatAgain;
 			sourceTree = "<group>";
@@ -85,6 +89,16 @@
 				52D47CCC1D52A3A10026B190 /* defaultPersonImage.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		52D6CF361D53AB0D0056C030 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				52D47CCA1D52A1CE0026B190 /* PeopleViewController.swift */,
+				52D47CD11D52A7CD0026B190 /* PersonDetailViewController.swift */,
+				52D6CF341D53AB070056C030 /* AddPersonViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,8 @@
 				52D47CCB1D52A1CE0026B190 /* PeopleViewController.swift in Sources */,
 				52D47CBC1D529E420026B190 /* WhosThatAgain.xcdatamodeld in Sources */,
 				52D47CB41D529E420026B190 /* AppDelegate.swift in Sources */,
+				52D6CF331D53AA650056C030 /* PersonFactory.swift in Sources */,
+				52D6CF351D53AB070056C030 /* AddPersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +331,7 @@
 				52D47CC71D529E420026B190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -12,6 +12,7 @@ class Person {
     var firstName: String;
     var lastName: String?;
     var location: String?;
+    var locationMet: String?
     var image: UIImage?;
     
     init(firstName: String) {
@@ -27,6 +28,13 @@ class Person {
         self.firstName = firstName;
         self.lastName = lastName;
         self.location = location;
+    }
+    
+    init(firstName: String, lastName: String, location: String, locationMet: String) {
+        self.firstName = firstName;
+        self.lastName = lastName;
+        self.location = location;
+        self.locationMet = locationMet;
     }
     
     init(firstName: String, lastName: String, image: UIImage) {
