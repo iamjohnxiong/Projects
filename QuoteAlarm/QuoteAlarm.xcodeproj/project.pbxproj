@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		524E24941D63EE3F00C5B6C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E24931D63EE3F00C5B6C1 /* AppDelegate.swift */; };
-		524E249B1D63EE3F00C5B6C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524E24991D63EE3F00C5B6C1 /* Main.storyboard */; };
-		524E249D1D63EE3F00C5B6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524E249C1D63EE3F00C5B6C1 /* Assets.xcassets */; };
-		524E24A01D63EE3F00C5B6C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524E249E1D63EE3F00C5B6C1 /* LaunchScreen.storyboard */; };
-		524E24A81D63EF1C00C5B6C1 /* QuoteAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E24A71D63EF1C00C5B6C1 /* QuoteAlarmTableViewController.swift */; };
-		524E24AA1D63F1BE00C5B6C1 /* QuoteAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E24A91D63F1BE00C5B6C1 /* QuoteAlarmTableViewCell.swift */; };
+		52D23F491D80D4AA00058B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D23F481D80D4AA00058B18 /* AppDelegate.swift */; };
+		52D23F4B1D80D4AA00058B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D23F4A1D80D4AA00058B18 /* ViewController.swift */; };
+		52D23F4E1D80D4AB00058B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D23F4C1D80D4AB00058B18 /* Main.storyboard */; };
+		52D23F511D80D4AB00058B18 /* QuoteAlarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52D23F4F1D80D4AB00058B18 /* QuoteAlarm.xcdatamodeld */; };
+		52D23F531D80D4AB00058B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D23F521D80D4AB00058B18 /* Assets.xcassets */; };
+		52D23F561D80D4AB00058B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D23F541D80D4AB00058B18 /* LaunchScreen.storyboard */; };
+		52D23F5E1D80D71100058B18 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D23F5D1D80D71100058B18 /* AlarmTableViewCell.swift */; };
+		52D23F601D80E39800058B18 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D23F5F1D80E39800058B18 /* QuoteViewController.swift */; };
+		52D23F621D80E40500058B18 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D23F611D80E40500058B18 /* QuoteTableViewCell.swift */; };
+		52D23F641D80EB3700058B18 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D23F631D80EB3700058B18 /* AddAlarmViewController.swift */; };
+		52D23F661D80EB7B00058B18 /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D23F651D80EB7B00058B18 /* AddQuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		524E24901D63EE3F00C5B6C1 /* QuoteAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		524E24931D63EE3F00C5B6C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		524E249A1D63EE3F00C5B6C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		524E249C1D63EE3F00C5B6C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		524E249F1D63EE3F00C5B6C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		524E24A11D63EE3F00C5B6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		524E24A71D63EF1C00C5B6C1 /* QuoteAlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteAlarmTableViewController.swift; sourceTree = "<group>"; };
-		524E24A91D63F1BE00C5B6C1 /* QuoteAlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteAlarmTableViewCell.swift; sourceTree = "<group>"; };
+		52D23F451D80D4AA00058B18 /* QuoteAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D23F481D80D4AA00058B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52D23F4A1D80D4AA00058B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52D23F4D1D80D4AB00058B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52D23F501D80D4AB00058B18 /* QuoteAlarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuoteAlarm.xcdatamodel; sourceTree = "<group>"; };
+		52D23F521D80D4AB00058B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52D23F551D80D4AB00058B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52D23F571D80D4AB00058B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D23F5D1D80D71100058B18 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		52D23F5F1D80E39800058B18 /* QuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		52D23F611D80E40500058B18 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
+		52D23F631D80EB3700058B18 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		52D23F651D80EB7B00058B18 /* AddQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		524E248D1D63EE3F00C5B6C1 /* Frameworks */ = {
+		52D23F421D80D4AA00058B18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +47,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		524E24871D63EE3F00C5B6C1 = {
+		52D23F3C1D80D4AA00058B18 = {
 			isa = PBXGroup;
 			children = (
-				524E24921D63EE3F00C5B6C1 /* QuoteAlarm */,
-				524E24911D63EE3F00C5B6C1 /* Products */,
+				52D23F471D80D4AA00058B18 /* QuoteAlarm */,
+				52D23F461D80D4AA00058B18 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		524E24911D63EE3F00C5B6C1 /* Products */ = {
+		52D23F461D80D4AA00058B18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				524E24901D63EE3F00C5B6C1 /* QuoteAlarm.app */,
+				52D23F451D80D4AA00058B18 /* QuoteAlarm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		524E24921D63EE3F00C5B6C1 /* QuoteAlarm */ = {
+		52D23F471D80D4AA00058B18 /* QuoteAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				524E24931D63EE3F00C5B6C1 /* AppDelegate.swift */,
-				524E24991D63EE3F00C5B6C1 /* Main.storyboard */,
-				524E249C1D63EE3F00C5B6C1 /* Assets.xcassets */,
-				524E249E1D63EE3F00C5B6C1 /* LaunchScreen.storyboard */,
-				524E24A11D63EE3F00C5B6C1 /* Info.plist */,
-				524E24A71D63EF1C00C5B6C1 /* QuoteAlarmTableViewController.swift */,
-				524E24A91D63F1BE00C5B6C1 /* QuoteAlarmTableViewCell.swift */,
+				52D23F481D80D4AA00058B18 /* AppDelegate.swift */,
+				52D23F4A1D80D4AA00058B18 /* ViewController.swift */,
+				52D23F4C1D80D4AB00058B18 /* Main.storyboard */,
+				52D23F521D80D4AB00058B18 /* Assets.xcassets */,
+				52D23F541D80D4AB00058B18 /* LaunchScreen.storyboard */,
+				52D23F571D80D4AB00058B18 /* Info.plist */,
+				52D23F4F1D80D4AB00058B18 /* QuoteAlarm.xcdatamodeld */,
+				52D23F5D1D80D71100058B18 /* AlarmTableViewCell.swift */,
+				52D23F5F1D80E39800058B18 /* QuoteViewController.swift */,
+				52D23F611D80E40500058B18 /* QuoteTableViewCell.swift */,
+				52D23F631D80EB3700058B18 /* AddAlarmViewController.swift */,
+				52D23F651D80EB7B00058B18 /* AddQuoteViewController.swift */,
 			);
 			path = QuoteAlarm;
 			sourceTree = "<group>";
@@ -70,13 +85,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		524E248F1D63EE3F00C5B6C1 /* QuoteAlarm */ = {
+		52D23F441D80D4AA00058B18 /* QuoteAlarm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 524E24A41D63EE3F00C5B6C1 /* Build configuration list for PBXNativeTarget "QuoteAlarm" */;
+			buildConfigurationList = 52D23F5A1D80D4AB00058B18 /* Build configuration list for PBXNativeTarget "QuoteAlarm" */;
 			buildPhases = (
-				524E248C1D63EE3F00C5B6C1 /* Sources */,
-				524E248D1D63EE3F00C5B6C1 /* Frameworks */,
-				524E248E1D63EE3F00C5B6C1 /* Resources */,
+				52D23F411D80D4AA00058B18 /* Sources */,
+				52D23F421D80D4AA00058B18 /* Frameworks */,
+				52D23F431D80D4AA00058B18 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,26 +99,26 @@
 			);
 			name = QuoteAlarm;
 			productName = QuoteAlarm;
-			productReference = 524E24901D63EE3F00C5B6C1 /* QuoteAlarm.app */;
+			productReference = 52D23F451D80D4AA00058B18 /* QuoteAlarm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		524E24881D63EE3F00C5B6C1 /* Project object */ = {
+		52D23F3D1D80D4AA00058B18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "John Xiong";
 				TargetAttributes = {
-					524E248F1D63EE3F00C5B6C1 = {
+					52D23F441D80D4AA00058B18 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = N4X9H9L3T7;
 					};
 				};
 			};
-			buildConfigurationList = 524E248B1D63EE3F00C5B6C1 /* Build configuration list for PBXProject "QuoteAlarm" */;
+			buildConfigurationList = 52D23F401D80D4AA00058B18 /* Build configuration list for PBXProject "QuoteAlarm" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,55 +126,60 @@
 				en,
 				Base,
 			);
-			mainGroup = 524E24871D63EE3F00C5B6C1;
-			productRefGroup = 524E24911D63EE3F00C5B6C1 /* Products */;
+			mainGroup = 52D23F3C1D80D4AA00058B18;
+			productRefGroup = 52D23F461D80D4AA00058B18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				524E248F1D63EE3F00C5B6C1 /* QuoteAlarm */,
+				52D23F441D80D4AA00058B18 /* QuoteAlarm */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		524E248E1D63EE3F00C5B6C1 /* Resources */ = {
+		52D23F431D80D4AA00058B18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524E24A01D63EE3F00C5B6C1 /* LaunchScreen.storyboard in Resources */,
-				524E249D1D63EE3F00C5B6C1 /* Assets.xcassets in Resources */,
-				524E249B1D63EE3F00C5B6C1 /* Main.storyboard in Resources */,
+				52D23F561D80D4AB00058B18 /* LaunchScreen.storyboard in Resources */,
+				52D23F531D80D4AB00058B18 /* Assets.xcassets in Resources */,
+				52D23F4E1D80D4AB00058B18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		524E248C1D63EE3F00C5B6C1 /* Sources */ = {
+		52D23F411D80D4AA00058B18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524E24A81D63EF1C00C5B6C1 /* QuoteAlarmTableViewController.swift in Sources */,
-				524E24AA1D63F1BE00C5B6C1 /* QuoteAlarmTableViewCell.swift in Sources */,
-				524E24941D63EE3F00C5B6C1 /* AppDelegate.swift in Sources */,
+				52D23F511D80D4AB00058B18 /* QuoteAlarm.xcdatamodeld in Sources */,
+				52D23F4B1D80D4AA00058B18 /* ViewController.swift in Sources */,
+				52D23F641D80EB3700058B18 /* AddAlarmViewController.swift in Sources */,
+				52D23F621D80E40500058B18 /* QuoteTableViewCell.swift in Sources */,
+				52D23F491D80D4AA00058B18 /* AppDelegate.swift in Sources */,
+				52D23F661D80EB7B00058B18 /* AddQuoteViewController.swift in Sources */,
+				52D23F5E1D80D71100058B18 /* AlarmTableViewCell.swift in Sources */,
+				52D23F601D80E39800058B18 /* QuoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		524E24991D63EE3F00C5B6C1 /* Main.storyboard */ = {
+		52D23F4C1D80D4AB00058B18 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				524E249A1D63EE3F00C5B6C1 /* Base */,
+				52D23F4D1D80D4AB00058B18 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		524E249E1D63EE3F00C5B6C1 /* LaunchScreen.storyboard */ = {
+		52D23F541D80D4AB00058B18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				524E249F1D63EE3F00C5B6C1 /* Base */,
+				52D23F551D80D4AB00058B18 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +187,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		524E24A21D63EE3F00C5B6C1 /* Debug */ = {
+		52D23F581D80D4AB00058B18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		524E24A31D63EE3F00C5B6C1 /* Release */ = {
+		52D23F591D80D4AB00058B18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -250,10 +270,11 @@
 			};
 			name = Release;
 		};
-		524E24A51D63EE3F00C5B6C1 /* Debug */ = {
+		52D23F5B1D80D4AB00058B18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QuoteAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnxiong.QuoteAlarm;
@@ -261,10 +282,11 @@
 			};
 			name = Debug;
 		};
-		524E24A61D63EE3F00C5B6C1 /* Release */ = {
+		52D23F5C1D80D4AB00058B18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QuoteAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnxiong.QuoteAlarm;
@@ -275,24 +297,37 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		524E248B1D63EE3F00C5B6C1 /* Build configuration list for PBXProject "QuoteAlarm" */ = {
+		52D23F401D80D4AA00058B18 /* Build configuration list for PBXProject "QuoteAlarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				524E24A21D63EE3F00C5B6C1 /* Debug */,
-				524E24A31D63EE3F00C5B6C1 /* Release */,
+				52D23F581D80D4AB00058B18 /* Debug */,
+				52D23F591D80D4AB00058B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		524E24A41D63EE3F00C5B6C1 /* Build configuration list for PBXNativeTarget "QuoteAlarm" */ = {
+		52D23F5A1D80D4AB00058B18 /* Build configuration list for PBXNativeTarget "QuoteAlarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				524E24A51D63EE3F00C5B6C1 /* Debug */,
-				524E24A61D63EE3F00C5B6C1 /* Release */,
+				52D23F5B1D80D4AB00058B18 /* Debug */,
+				52D23F5C1D80D4AB00058B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52D23F4F1D80D4AB00058B18 /* QuoteAlarm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52D23F501D80D4AB00058B18 /* QuoteAlarm.xcdatamodel */,
+			);
+			currentVersion = 52D23F501D80D4AB00058B18 /* QuoteAlarm.xcdatamodel */;
+			path = QuoteAlarm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 524E24881D63EE3F00C5B6C1 /* Project object */;
+	rootObject = 52D23F3D1D80D4AA00058B18 /* Project object */;
 }

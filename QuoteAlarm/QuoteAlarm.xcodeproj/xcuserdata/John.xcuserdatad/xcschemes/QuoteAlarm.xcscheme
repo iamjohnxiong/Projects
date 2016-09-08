@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "524E248F1D63EE3F00C5B6C1"
+               BlueprintIdentifier = "52D23F441D80D4AA00058B18"
                BuildableName = "QuoteAlarm.app"
                BlueprintName = "QuoteAlarm"
                ReferencedContainer = "container:QuoteAlarm.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "524E248F1D63EE3F00C5B6C1"
+            BlueprintIdentifier = "52D23F441D80D4AA00058B18"
             BuildableName = "QuoteAlarm.app"
             BlueprintName = "QuoteAlarm"
             ReferencedContainer = "container:QuoteAlarm.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "524E248F1D63EE3F00C5B6C1"
+            BlueprintIdentifier = "52D23F441D80D4AA00058B18"
             BuildableName = "QuoteAlarm.app"
             BlueprintName = "QuoteAlarm"
             ReferencedContainer = "container:QuoteAlarm.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "524E248F1D63EE3F00C5B6C1"
+            BlueprintIdentifier = "52D23F441D80D4AA00058B18"
             BuildableName = "QuoteAlarm.app"
             BlueprintName = "QuoteAlarm"
             ReferencedContainer = "container:QuoteAlarm.xcodeproj">
