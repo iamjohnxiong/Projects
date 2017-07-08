@@ -9,11 +9,16 @@
 import UIKit
 
 class AddQuoteViewController: UIViewController {
+    @IBOutlet weak var quoteTextView: UITextView!
+    
+    @IBOutlet weak var authorTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        quoteTextView.layer.borderColor = UIColor( red: 153/255, green: 153/255, blue:0/255, alpha: 1.0 ).cgColor;
+        quoteTextView.layer.borderWidth = 1;
     }
 
     override func didReceiveMemoryWarning() {

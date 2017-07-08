@@ -25,19 +25,23 @@ class QuoteViewController: UIViewController, UITableViewDelegate {
     
     
     // MARK - Table View Methods
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = quoteTableView.dequeueReusableCellWithIdentifier("QuoteTableViewCell") as! QuoteTableViewCell;
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = quoteTableView.dequeueReusableCell(withIdentifier: "QuoteTableViewCell") as! QuoteTableViewCell;
         
         cell.quoteLabel.text = "Fortune favors the bold";
         
         return cell;
     }
-    
-    
+
+ 
+    @IBAction func unwindToQuoteViewContoller(segue: UIStoryboardSegue) {
+        
+    }
 
     /*
     // MARK: - Navigation

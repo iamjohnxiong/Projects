@@ -24,12 +24,14 @@ class ViewController: UIViewController, UITableViewDelegate {
 
     
     // MARK - Table View Methods
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = alarmTableView.dequeueReusableCellWithIdentifier("AlarmTableViewCell") as! AlarmTableViewCell;
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = alarmTableView.dequeueReusableCell(withIdentifier: "AlarmTableViewCell") as! AlarmTableViewCell;
         
         cell.timeLabel.text = "13:00 AM";
         cell.alarmTimeFrame.text = "Weekdays";
@@ -37,6 +39,11 @@ class ViewController: UIViewController, UITableViewDelegate {
         cell.quoteLabel.text = "Fortune favors the bold...";
         
         return cell;
+    }
+    
+    
+    @IBAction func unwindToAlarmViewContoller(_ segue: UIStoryboardSegue) {
+        
     }
 
 }
