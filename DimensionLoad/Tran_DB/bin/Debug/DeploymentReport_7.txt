@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column cstSSN in table [dbo].[tblCustomer] is currently  CHAR (11) NOT NULL but is being changed to  CHAR
+         (9) NOT NULL. Data loss could occur.
+
+** User actions
+     Alter
+       [dbo].[tblCustomer] (Table)
+
+** Supporting actions
+
+The type for column cstSSN in table [dbo].[tblCustomer] is currently  CHAR (11) NOT NULL but is being changed to  CHAR (9) NOT NULL. Data loss could occur.
+

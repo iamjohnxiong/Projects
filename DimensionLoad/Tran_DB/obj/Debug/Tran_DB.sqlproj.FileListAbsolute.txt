@@ -1,0 +1,9 @@
+C:\Temp\DimensionLoad\Tran_DB\bin\Debug\Tran_DB.dacpac
+C:\Temp\DimensionLoad\Tran_DB\bin\Debug\Tran_DB.dll
+C:\Temp\DimensionLoad\Tran_DB\bin\Debug\Tran_DB.pdb
+C:\Temp\DimensionLoad\Tran_DB\obj\Debug\Tran_DB.dll
+C:\Temp\DimensionLoad\Tran_DB\obj\Debug\Tran_DB.pdb
+C:\Temp\DimensionLoad\Tran_DB\obj\Debug\Model.xml
+C:\Temp\DimensionLoad\Tran_DB\obj\Debug\refactor.xml
+C:\Temp\DimensionLoad\Tran_DB\obj\Debug\postdeploy.sql
+C:\Temp\DimensionLoad\Tran_DB\obj\Debug\predeploy.sql

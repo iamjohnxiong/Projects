@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "EDW_DB", "EDW_DB\EDW_DB.sqlproj", "{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Tran_DB", "Tran_DB\Tran_DB.sqlproj", "{A16035B8-EECC-4E72-8E13-695C65509683}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "EDW_SSIS", "EDW_SSIS\EDW_SSIS.dtproj", "{40B586F4-CC16-4A96-95B1-2D303759F4C9}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Tran_SSIS", "Tran_SSIS\Tran_SSIS.dtproj", "{5385C3A2-5FD8-498B-84D7-5445F83E69B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C3248B7-ADC7-4100-B9B4-60E8AFD8B86C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16035B8-EECC-4E72-8E13-695C65509683}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{40B586F4-CC16-4A96-95B1-2D303759F4C9}.Debug|Any CPU.ActiveCfg = Development
+		{40B586F4-CC16-4A96-95B1-2D303759F4C9}.Debug|Any CPU.Build.0 = Development
+		{40B586F4-CC16-4A96-95B1-2D303759F4C9}.Development|Any CPU.ActiveCfg = Development
+		{40B586F4-CC16-4A96-95B1-2D303759F4C9}.Development|Any CPU.Build.0 = Development
+		{40B586F4-CC16-4A96-95B1-2D303759F4C9}.Release|Any CPU.ActiveCfg = Development
+		{40B586F4-CC16-4A96-95B1-2D303759F4C9}.Release|Any CPU.Build.0 = Development
+		{5385C3A2-5FD8-498B-84D7-5445F83E69B0}.Debug|Any CPU.ActiveCfg = Development
+		{5385C3A2-5FD8-498B-84D7-5445F83E69B0}.Debug|Any CPU.Build.0 = Development
+		{5385C3A2-5FD8-498B-84D7-5445F83E69B0}.Development|Any CPU.ActiveCfg = Development
+		{5385C3A2-5FD8-498B-84D7-5445F83E69B0}.Development|Any CPU.Build.0 = Development
+		{5385C3A2-5FD8-498B-84D7-5445F83E69B0}.Release|Any CPU.ActiveCfg = Development
+		{5385C3A2-5FD8-498B-84D7-5445F83E69B0}.Release|Any CPU.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB26B228-BC21-42D3-897D-D6A12DFDB8C7}
+	EndGlobalSection
+EndGlobal

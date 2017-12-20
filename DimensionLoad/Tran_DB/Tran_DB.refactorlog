@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="5915a862-9e11-4e80-a0a1-54c845068e86" ChangeDateTime="12/20/2017 13:48:49">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="cstId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3fb148db-0fcb-46eb-8631-890ca2650783" ChangeDateTime="12/20/2017 13:57:45">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[cstGuide]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="cstGuid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9016d3f6-87a6-4fbf-bed6-f3f99c2a50a5" ChangeDateTime="12/20/2017 14:07:26">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[cstId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="stgCstId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d29acb8f-bd7b-49a5-b87d-01855ab94b51" ChangeDateTime="12/20/2017 14:07:28">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[cstFirstName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="stgCstFirstName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a56060ba-247a-4f1c-a13e-45834b13d946" ChangeDateTime="12/20/2017 14:07:30">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[cstLastName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="stgCstLastName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ddff2e0b-2237-49a8-a4ec-2c78f974706a" ChangeDateTime="12/20/2017 14:07:32">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[cstEmail]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="stgCstEmail" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="32156643-5c14-4f25-9fd4-aa5ed5021813" ChangeDateTime="12/20/2017 14:07:36">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[cstGender]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="stgCstGender" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="06246ecb-1670-4a48-90b1-cae976357959" ChangeDateTime="12/20/2017 14:07:38">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[cstSSN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="stgCstSSN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b226e030-8a52-4a5c-bce2-5c94dae6bf0e" ChangeDateTime="12/20/2017 14:07:40">
+    <Property Name="ElementName" Value="[dbo].[tblCustomer].[cstGuid]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblCustomer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="stgCstGuid" />
+  </Operation>
+</Operations>

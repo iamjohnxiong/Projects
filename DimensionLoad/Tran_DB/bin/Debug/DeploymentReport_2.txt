@@ -1,0 +1,30 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The table [dbo].[tblCustomer] is being dropped and re-created since all non-computed columns within the table have been
+         redefined.
+
+** User actions
+     Rename
+       [dbo].[tblCustomer].[stgCstId] (Column)
+       [dbo].[tblCustomer].[stgCstFirstName] (Column)
+       [dbo].[tblCustomer].[stgCstLastName] (Column)
+       [dbo].[tblCustomer].[stgCstEmail] (Column)
+       [dbo].[tblCustomer].[stgCstGender] (Column)
+       [dbo].[tblCustomer].[stgCstSSN] (Column)
+       [dbo].[tblCustomer].[stgCstGuid] (Column)
+     Drop
+       [dbo].[tblCustomer] (Table)
+     Create
+       [dbo].[tblCustomer] (Table)
+       [dbo].[stgCustomer] (Table)
+
+** Supporting actions
+
+The table [dbo].[tblCustomer] is being dropped and re-created since all non-computed columns within the table have been redefined.
+

@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/20/2017 9:05:41 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="A-212229"
+  DTS:CreatorName="MFBNTDOM\jxiong"
+  DTS:DTSID="{25256A83-A976-489F-BF8A-6EBACE3A442F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0800.60"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Tran_Load_Customer"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{B71694CA-D086-4C5B-BDC4-072AC3A0D1F3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT - Load Customer from Stage to Target"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{BFC3A19A-99B2-46F7-B7CD-AFA66F99CAE8}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT - Load Customer from Stage to Target"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="DER - Transform Fields"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Inputs[Derived Column Input].Columns[stgCstGender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stgCstGender"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstGender]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Inputs[Derived Column Input].Columns[stgCstSSN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stgCstSSN"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstSSN]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Output].Columns[derGender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Output].Columns[derGender]"
+                      name="derGender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,1,1252)(#{Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstGender]} == "Female" ? "F" : "M")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,1,1252)(stgCstGender == "Female" ? "F" : "M")</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Output].Columns[derSSN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="9"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Output].Columns[derSSN]"
+                      name="derSSN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,9,1252)[REPLACE](#{Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstSSN]},"-","")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,9,1252)REPLACE(stgCstSSN,"-","")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLEDB DEST - tblCustomer"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[tblCustomer]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Connections[OleDbConnection]"
+                  connectionManagerID="{826EE4C0-8D36-4168-B79C-3217840EBA09}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TranOleDb]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].Columns[stgCstFirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stgCstFirstName"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstFirstName]"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstFirstName]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].Columns[stgCstLastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stgCstLastName"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstLastName]"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstLastName]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].Columns[stgCstEmail]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stgCstEmail"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstEmail]"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstEmail]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].Columns[stgCstGuid]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stgCstGuid"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstGuid]"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstGuid]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].Columns[derGender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="derGender"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstGender]"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Output].Columns[derGender]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].Columns[derSSN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="9"
+                      cachedName="derSSN"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstSSN]"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Output].Columns[derSSN]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstId]"
+                      dataType="i4"
+                      name="cstId" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cstFirstName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cstLastName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstEmail]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cstEmail" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstGender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="cstGender" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstSSN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="cstSSN" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input].ExternalColumns[cstGuid]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cstGuid" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLEDB SRC - stgCustomer"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[stgCustomer]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Connections[OleDbConnection]"
+                  connectionManagerID="{826EE4C0-8D36-4168-B79C-3217840EBA09}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TranOleDb]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstId]"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstId]"
+                      name="stgCstId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstFirstName]"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstFirstName]"
+                      name="stgCstFirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstLastName]"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstLastName]"
+                      name="stgCstLastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstEmail]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstEmail]"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstEmail]"
+                      name="stgCstEmail"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstGender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstGender]"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstGender]"
+                      name="stgCstGender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstSSN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstSSN]"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstSSN]"
+                      name="stgCstSSN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstGuid]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstGuid]"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].Columns[stgCstGuid]"
+                      name="stgCstGuid"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstId]"
+                      dataType="i4"
+                      name="stgCstId" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stgCstFirstName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stgCstLastName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstEmail]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stgCstEmail" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstGender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stgCstGender" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstSSN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stgCstSSN" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output].ExternalColumns[stgCstGuid]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stgCstGuid" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstId]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstId]"
+                      name="stgCstId" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstFirstName]"
+                      name="stgCstFirstName" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstLastName]"
+                      name="stgCstLastName" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstEmail]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstEmail]"
+                      name="stgCstEmail" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstGender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstGender]"
+                      name="stgCstGender" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstSSN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstSSN]"
+                      name="stgCstSSN" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstGuid]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[stgCstGuid]"
+                      name="stgCstGuid" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT - Load Customer from Stage to Target.Paths[Derived Column Output]"
+              endId="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load Customer from Stage to Target.Paths[OLE DB Source Output]"
+              endId="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="288,42"
+          Id="Package\DFT - Load Customer from Stage to Target"
+          TopLeft="459,269" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT - Load Customer from Stage to Target">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="214,42"
+          Id="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer"
+          TopLeft="433,127" />
+        <NodeLayout
+          Size="217,42"
+          Id="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer"
+          TopLeft="427,325" />
+        <NodeLayout
+          Size="194,42"
+          Id="Package\DFT - Load Customer from Stage to Target\DER - Transform Fields"
+          TopLeft="439,231" />
+        <EdgeLayout
+          Id="Package\DFT - Load Customer from Stage to Target.Paths[OLE DB Source Output]"
+          TopLeft="538,169">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62"
+              Start="0,0"
+              End="0,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load Customer from Stage to Target.Paths[Derived Column Output]"
+          TopLeft="535.75,273">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Customer from Stage to Target\OLEDB DEST - tblCustomer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Customer from Stage to Target\OLEDB SRC - stgCustomer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

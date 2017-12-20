@@ -1,0 +1,5 @@
+C:\Temp\DimensionLoad\EDW_DB\bin\Debug\EDW_DB.dacpac
+C:\Temp\DimensionLoad\EDW_DB\bin\Debug\EDW_DB.dll
+C:\Temp\DimensionLoad\EDW_DB\bin\Debug\EDW_DB.pdb
+C:\Temp\DimensionLoad\EDW_DB\obj\Debug\EDW_DB.dll
+C:\Temp\DimensionLoad\EDW_DB\obj\Debug\EDW_DB.pdb
