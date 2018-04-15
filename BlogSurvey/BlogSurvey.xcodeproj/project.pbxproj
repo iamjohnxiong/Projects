@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A8A4A72082BBC9001DE387 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A8A4A62082BBC9001DE387 /* GoogleService-Info.plist */; };
+		52A8A4A92082D2DC001DE387 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8A4A82082D2DC001DE387 /* LoginViewController.swift */; };
+		52A8A4AC2082E612001DE387 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8A4AB2082E612001DE387 /* CreateUserViewController.swift */; };
 		52C9509A208188F500B7F742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C95099208188F500B7F742 /* AppDelegate.swift */; };
 		52C9509C208188F500B7F742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9509B208188F500B7F742 /* ViewController.swift */; };
 		52C9509F208188F500B7F742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C9509D208188F500B7F742 /* Main.storyboard */; };
 		52C950A1208188F500B7F742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C950A0208188F500B7F742 /* Assets.xcassets */; };
 		52C950A4208188F500B7F742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C950A2208188F500B7F742 /* LaunchScreen.storyboard */; };
+		FB617CA0037CBEA7DB82E739 /* Pods_BlogSurvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD8E0FD717763B61D2AE1B /* Pods_BlogSurvey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08438BEB70A911035487D093 /* Pods-BlogSurvey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogSurvey.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlogSurvey/Pods-BlogSurvey.release.xcconfig"; sourceTree = "<group>"; };
+		291BD5F3B18446D708EA5F21 /* Pods-BlogSurvey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogSurvey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlogSurvey/Pods-BlogSurvey.debug.xcconfig"; sourceTree = "<group>"; };
+		35BD8E0FD717763B61D2AE1B /* Pods_BlogSurvey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlogSurvey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A8A4A62082BBC9001DE387 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52A8A4A82082D2DC001DE387 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		52A8A4AA2082D64E001DE387 /* BlogSurvey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlogSurvey.entitlements; sourceTree = "<group>"; };
+		52A8A4AB2082E612001DE387 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		52C95096208188F500B7F742 /* BlogSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C95099208188F500B7F742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C9509B208188F500B7F742 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB617CA0037CBEA7DB82E739 /* Pods_BlogSurvey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452222BA0823BF72547C38B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				291BD5F3B18446D708EA5F21 /* Pods-BlogSurvey.debug.xcconfig */,
+				08438BEB70A911035487D093 /* Pods-BlogSurvey.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		52C9508D208188F500B7F742 = {
 			isa = PBXGroup;
 			children = (
 				52C95098208188F500B7F742 /* BlogSurvey */,
 				52C95097208188F500B7F742 /* Products */,
+				452222BA0823BF72547C38B9 /* Pods */,
+				9E2B3B0A1A6F4730453AC508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,26 @@
 		52C95098208188F500B7F742 /* BlogSurvey */ = {
 			isa = PBXGroup;
 			children = (
+				52A8A4AA2082D64E001DE387 /* BlogSurvey.entitlements */,
 				52C95099208188F500B7F742 /* AppDelegate.swift */,
 				52C9509B208188F500B7F742 /* ViewController.swift */,
 				52C9509D208188F500B7F742 /* Main.storyboard */,
 				52C950A0208188F500B7F742 /* Assets.xcassets */,
 				52C950A2208188F500B7F742 /* LaunchScreen.storyboard */,
 				52C950A5208188F500B7F742 /* Info.plist */,
+				52A8A4A62082BBC9001DE387 /* GoogleService-Info.plist */,
+				52A8A4A82082D2DC001DE387 /* LoginViewController.swift */,
+				52A8A4AB2082E612001DE387 /* CreateUserViewController.swift */,
 			);
 			path = BlogSurvey;
+			sourceTree = "<group>";
+		};
+		9E2B3B0A1A6F4730453AC508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35BD8E0FD717763B61D2AE1B /* Pods_BlogSurvey.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C950A8208188F500B7F742 /* Build configuration list for PBXNativeTarget "BlogSurvey" */;
 			buildPhases = (
+				04FB958718832B65D543928B /* [CP] Check Pods Manifest.lock */,
 				52C95092208188F500B7F742 /* Sources */,
 				52C95093208188F500B7F742 /* Frameworks */,
 				52C95094208188F500B7F742 /* Resources */,
+				B08DAF368AB26DCB8F72A98A /* [CP] Embed Pods Frameworks */,
+				B9CE62FABF34D52EDA34C45F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +136,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = N4X9H9L3T7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C950A4208188F500B7F742 /* LaunchScreen.storyboard in Resources */,
+				52A8A4A72082BBC9001DE387 /* GoogleService-Info.plist in Resources */,
 				52C950A1208188F500B7F742 /* Assets.xcassets in Resources */,
 				52C9509F208188F500B7F742 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +176,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04FB958718832B65D543928B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlogSurvey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B08DAF368AB26DCB8F72A98A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlogSurvey/Pods-BlogSurvey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlogSurvey/Pods-BlogSurvey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9CE62FABF34D52EDA34C45F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlogSurvey/Pods-BlogSurvey-resources.sh",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIAuthPickerViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIAuthTableViewCell.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIEmailEntryViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordRecoveryViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordSignInViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordSignUpViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordVerificationViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/en.lproj",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIAuthPickerViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIAuthTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIEmailEntryViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordRecoveryViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordSignInViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordSignUpViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordVerificationViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlogSurvey/Pods-BlogSurvey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52C95092208188F500B7F742 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A8A4A92082D2DC001DE387 /* LoginViewController.swift in Sources */,
 				52C9509C208188F500B7F742 /* ViewController.swift in Sources */,
 				52C9509A208188F500B7F742 /* AppDelegate.swift in Sources */,
+				52A8A4AC2082E612001DE387 /* CreateUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +398,10 @@
 		};
 		52C950A9208188F500B7F742 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291BD5F3B18446D708EA5F21 /* Pods-BlogSurvey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlogSurvey/BlogSurvey.entitlements;
 				DEVELOPMENT_TEAM = N4X9H9L3T7;
 				INFOPLIST_FILE = BlogSurvey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,8 +413,10 @@
 		};
 		52C950AA208188F500B7F742 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08438BEB70A911035487D093 /* Pods-BlogSurvey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlogSurvey/BlogSurvey.entitlements;
 				DEVELOPMENT_TEAM = N4X9H9L3T7;
 				INFOPLIST_FILE = BlogSurvey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -304,6 +445,7 @@
 				52C950AA208188F500B7F742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

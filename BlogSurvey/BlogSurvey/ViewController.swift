@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class ViewController: UIViewController {
-
-    
     var wantCareer = false
     var wantLife = false
     var wantProgramming = false
@@ -19,7 +20,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var otherTextView: UITextView!
     
+    @IBAction func signOutButtonPressed(_ sender: Any) {
+        do {
+            //try FIRAuth.auth()?.signOut()
+        } catch {
+            // TODO: Handle signout issue.
+        }
+    }
+    
     @IBAction func submitButtonClicked(_ sender: Any) {
+        
     }
     
     @IBAction func blogTypeSwitched(_ sender: Any) {
@@ -45,6 +55,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*
+        let ref = FIRDatabase.database().reference(withPath: "blog_submissions/blog_submission")
+        ref.observe(.value) { (snapshot) in
+            print(snapshot.value)
+        }
+        */
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,11 +70,6 @@ class ViewController: UIViewController {
         otherTextView.layer.borderWidth = 1
         submitButton.layer.borderColor = UIColor.black.cgColor
         submitButton.layer.borderWidth = 1
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
