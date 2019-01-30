@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525A95EB1E69BC7C00BCA27B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A95EA1E69BC7C00BCA27B /* AppDelegate.swift */; };
+		525A95F01E69BC7C00BCA27B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525A95EE1E69BC7C00BCA27B /* Main.storyboard */; };
+		525A95F31E69BC7C00BCA27B /* Arrow_KE_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 525A95F11E69BC7C00BCA27B /* Arrow_KE_Calculator.xcdatamodeld */; };
+		525A95F51E69BC7C00BCA27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525A95F41E69BC7C00BCA27B /* Assets.xcassets */; };
+		525A95F81E69BC7C00BCA27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525A95F61E69BC7C00BCA27B /* LaunchScreen.storyboard */; };
+		525A96031E69BC7D00BCA27B /* Arrow_KE_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A96021E69BC7D00BCA27B /* Arrow_KE_CalculatorTests.swift */; };
+		525A960E1E69BC7D00BCA27B /* Arrow_KE_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A960D1E69BC7D00BCA27B /* Arrow_KE_CalculatorUITests.swift */; };
+		525A961C1E69C15300BCA27B /* NavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525A961B1E69C15300BCA27B /* NavView.xib */; };
+		525A96241E69C65D00BCA27B /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A96231E69C65D00BCA27B /* NavView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		525A95FF1E69BC7D00BCA27B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525A95DF1E69BC7C00BCA27B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525A95E61E69BC7C00BCA27B;
+			remoteInfo = "Arrow KE Calculator";
+		};
+		525A960A1E69BC7D00BCA27B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525A95DF1E69BC7C00BCA27B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525A95E61E69BC7C00BCA27B;
+			remoteInfo = "Arrow KE Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		525A95E71E69BC7C00BCA27B /* Arrow KE Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arrow KE Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525A95EA1E69BC7C00BCA27B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		525A95EF1E69BC7C00BCA27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		525A95F21E69BC7C00BCA27B /* Arrow_KE_Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Arrow_KE_Calculator.xcdatamodel; sourceTree = "<group>"; };
+		525A95F41E69BC7C00BCA27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		525A95F71E69BC7C00BCA27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		525A95F91E69BC7C00BCA27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525A95FE1E69BC7D00BCA27B /* Arrow KE CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arrow KE CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525A96021E69BC7D00BCA27B /* Arrow_KE_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow_KE_CalculatorTests.swift; sourceTree = "<group>"; };
+		525A96041E69BC7D00BCA27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525A96091E69BC7D00BCA27B /* Arrow KE CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arrow KE CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525A960D1E69BC7D00BCA27B /* Arrow_KE_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow_KE_CalculatorUITests.swift; sourceTree = "<group>"; };
+		525A960F1E69BC7D00BCA27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525A961B1E69C15300BCA27B /* NavView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavView.xib; sourceTree = "<group>"; };
+		525A96231E69C65D00BCA27B /* NavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		525A95E41E69BC7C00BCA27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525A95FB1E69BC7D00BCA27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525A96061E69BC7D00BCA27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		525A95DE1E69BC7C00BCA27B = {
+			isa = PBXGroup;
+			children = (
+				525A95E91E69BC7C00BCA27B /* Arrow KE Calculator */,
+				525A96011E69BC7D00BCA27B /* Arrow KE CalculatorTests */,
+				525A960C1E69BC7D00BCA27B /* Arrow KE CalculatorUITests */,
+				525A95E81E69BC7C00BCA27B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		525A95E81E69BC7C00BCA27B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				525A95E71E69BC7C00BCA27B /* Arrow KE Calculator.app */,
+				525A95FE1E69BC7D00BCA27B /* Arrow KE CalculatorTests.xctest */,
+				525A96091E69BC7D00BCA27B /* Arrow KE CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		525A95E91E69BC7C00BCA27B /* Arrow KE Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				525A95EA1E69BC7C00BCA27B /* AppDelegate.swift */,
+				525A95EE1E69BC7C00BCA27B /* Main.storyboard */,
+				525A95F41E69BC7C00BCA27B /* Assets.xcassets */,
+				525A95F61E69BC7C00BCA27B /* LaunchScreen.storyboard */,
+				525A95F91E69BC7C00BCA27B /* Info.plist */,
+				525A95F11E69BC7C00BCA27B /* Arrow_KE_Calculator.xcdatamodeld */,
+				525A961B1E69C15300BCA27B /* NavView.xib */,
+				525A96231E69C65D00BCA27B /* NavView.swift */,
+			);
+			path = "Arrow KE Calculator";
+			sourceTree = "<group>";
+		};
+		525A96011E69BC7D00BCA27B /* Arrow KE CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				525A96021E69BC7D00BCA27B /* Arrow_KE_CalculatorTests.swift */,
+				525A96041E69BC7D00BCA27B /* Info.plist */,
+			);
+			path = "Arrow KE CalculatorTests";
+			sourceTree = "<group>";
+		};
+		525A960C1E69BC7D00BCA27B /* Arrow KE CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				525A960D1E69BC7D00BCA27B /* Arrow_KE_CalculatorUITests.swift */,
+				525A960F1E69BC7D00BCA27B /* Info.plist */,
+			);
+			path = "Arrow KE CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		525A95E61E69BC7C00BCA27B /* Arrow KE Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525A96121E69BC7D00BCA27B /* Build configuration list for PBXNativeTarget "Arrow KE Calculator" */;
+			buildPhases = (
+				525A95E31E69BC7C00BCA27B /* Sources */,
+				525A95E41E69BC7C00BCA27B /* Frameworks */,
+				525A95E51E69BC7C00BCA27B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arrow KE Calculator";
+			productName = "Arrow KE Calculator";
+			productReference = 525A95E71E69BC7C00BCA27B /* Arrow KE Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		525A95FD1E69BC7D00BCA27B /* Arrow KE CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525A96151E69BC7D00BCA27B /* Build configuration list for PBXNativeTarget "Arrow KE CalculatorTests" */;
+			buildPhases = (
+				525A95FA1E69BC7D00BCA27B /* Sources */,
+				525A95FB1E69BC7D00BCA27B /* Frameworks */,
+				525A95FC1E69BC7D00BCA27B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525A96001E69BC7D00BCA27B /* PBXTargetDependency */,
+			);
+			name = "Arrow KE CalculatorTests";
+			productName = "Arrow KE CalculatorTests";
+			productReference = 525A95FE1E69BC7D00BCA27B /* Arrow KE CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		525A96081E69BC7D00BCA27B /* Arrow KE CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525A96181E69BC7D00BCA27B /* Build configuration list for PBXNativeTarget "Arrow KE CalculatorUITests" */;
+			buildPhases = (
+				525A96051E69BC7D00BCA27B /* Sources */,
+				525A96061E69BC7D00BCA27B /* Frameworks */,
+				525A96071E69BC7D00BCA27B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525A960B1E69BC7D00BCA27B /* PBXTargetDependency */,
+			);
+			name = "Arrow KE CalculatorUITests";
+			productName = "Arrow KE CalculatorUITests";
+			productReference = 525A96091E69BC7D00BCA27B /* Arrow KE CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		525A95DF1E69BC7C00BCA27B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Xiong;
+				TargetAttributes = {
+					525A95E61E69BC7C00BCA27B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					525A95FD1E69BC7D00BCA27B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 525A95E61E69BC7C00BCA27B;
+					};
+					525A96081E69BC7D00BCA27B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 525A95E61E69BC7C00BCA27B;
+					};
+				};
+			};
+			buildConfigurationList = 525A95E21E69BC7C00BCA27B /* Build configuration list for PBXProject "Arrow KE Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 525A95DE1E69BC7C00BCA27B;
+			productRefGroup = 525A95E81E69BC7C00BCA27B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				525A95E61E69BC7C00BCA27B /* Arrow KE Calculator */,
+				525A95FD1E69BC7D00BCA27B /* Arrow KE CalculatorTests */,
+				525A96081E69BC7D00BCA27B /* Arrow KE CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		525A95E51E69BC7C00BCA27B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525A961C1E69C15300BCA27B /* NavView.xib in Resources */,
+				525A95F81E69BC7C00BCA27B /* LaunchScreen.storyboard in Resources */,
+				525A95F51E69BC7C00BCA27B /* Assets.xcassets in Resources */,
+				525A95F01E69BC7C00BCA27B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525A95FC1E69BC7D00BCA27B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525A96071E69BC7D00BCA27B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		525A95E31E69BC7C00BCA27B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525A96241E69C65D00BCA27B /* NavView.swift in Sources */,
+				525A95F31E69BC7C00BCA27B /* Arrow_KE_Calculator.xcdatamodeld in Sources */,
+				525A95EB1E69BC7C00BCA27B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525A95FA1E69BC7D00BCA27B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525A96031E69BC7D00BCA27B /* Arrow_KE_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525A96051E69BC7D00BCA27B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525A960E1E69BC7D00BCA27B /* Arrow_KE_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		525A96001E69BC7D00BCA27B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525A95E61E69BC7C00BCA27B /* Arrow KE Calculator */;
+			targetProxy = 525A95FF1E69BC7D00BCA27B /* PBXContainerItemProxy */;
+		};
+		525A960B1E69BC7D00BCA27B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525A95E61E69BC7C00BCA27B /* Arrow KE Calculator */;
+			targetProxy = 525A960A1E69BC7D00BCA27B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		525A95EE1E69BC7C00BCA27B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525A95EF1E69BC7C00BCA27B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		525A95F61E69BC7C00BCA27B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525A95F71E69BC7C00BCA27B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		525A96101E69BC7D00BCA27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		525A96111E69BC7D00BCA27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		525A96131E69BC7D00BCA27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Arrow KE Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iamjohnxiong.Arrow-KE-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		525A96141E69BC7D00BCA27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Arrow KE Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iamjohnxiong.Arrow-KE-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		525A96161E69BC7D00BCA27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Arrow KE CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iamjohnxiong.Arrow-KE-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arrow KE Calculator.app/Arrow KE Calculator";
+			};
+			name = Debug;
+		};
+		525A96171E69BC7D00BCA27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Arrow KE CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iamjohnxiong.Arrow-KE-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arrow KE Calculator.app/Arrow KE Calculator";
+			};
+			name = Release;
+		};
+		525A96191E69BC7D00BCA27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Arrow KE CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iamjohnxiong.Arrow-KE-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Arrow KE Calculator";
+			};
+			name = Debug;
+		};
+		525A961A1E69BC7D00BCA27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Arrow KE CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iamjohnxiong.Arrow-KE-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Arrow KE Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		525A95E21E69BC7C00BCA27B /* Build configuration list for PBXProject "Arrow KE Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525A96101E69BC7D00BCA27B /* Debug */,
+				525A96111E69BC7D00BCA27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525A96121E69BC7D00BCA27B /* Build configuration list for PBXNativeTarget "Arrow KE Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525A96131E69BC7D00BCA27B /* Debug */,
+				525A96141E69BC7D00BCA27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		525A96151E69BC7D00BCA27B /* Build configuration list for PBXNativeTarget "Arrow KE CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525A96161E69BC7D00BCA27B /* Debug */,
+				525A96171E69BC7D00BCA27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		525A96181E69BC7D00BCA27B /* Build configuration list for PBXNativeTarget "Arrow KE CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525A96191E69BC7D00BCA27B /* Debug */,
+				525A961A1E69BC7D00BCA27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		525A95F11E69BC7C00BCA27B /* Arrow_KE_Calculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				525A95F21E69BC7C00BCA27B /* Arrow_KE_Calculator.xcdatamodel */,
+			);
+			currentVersion = 525A95F21E69BC7C00BCA27B /* Arrow_KE_Calculator.xcdatamodel */;
+			path = Arrow_KE_Calculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 525A95DF1E69BC7C00BCA27B /* Project object */;
+}
